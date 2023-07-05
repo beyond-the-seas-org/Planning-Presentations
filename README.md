@@ -37,7 +37,7 @@ This repository contains the weekly sessional presentation files throughout the 
 ### Things To Learn
 
 - GitHub Branch, Issue, Project etc.
-- Docker for containerization
+- Docker for containerization: [freecodecamp](https://www.freecodecamp.org/news/the-docker-handbook), [youtube](https://youtube.com/playlist?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)
 - Web Scrapping with Python/ other tools
 - Front End Framework
 - Back End Framework
