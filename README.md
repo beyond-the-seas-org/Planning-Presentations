@@ -44,6 +44,7 @@ This repository contains the weekly sessional presentation files throughout the 
 - Message Queue (PubSub) and/or Cache (Redis)
 - API Gateway (if microservice chosen): Front Server/Proxy Server etc. (nginx/kong)
 - [12 Factor Checklist](https://12factor.net/)
+- dblp API, scholar scraping for professor info
 
 
 ### Confusion
