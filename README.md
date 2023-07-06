@@ -20,7 +20,7 @@ This repository contains the weekly sessional presentation files throughout the 
 - Analytics -> Web Scraping 
 - Recommendation (ML Algorithm in News Feed)
 - Question Answering (ML Algorithm in Chatbot)
-- Clustering (ML Algorithm for Profile Match)
+- Clustering (ML Algorithm for Profile Match): Stable matching (old) or Community (current student) based recommendation (netflix) 
 
 ### Communication
 - 2 <-> 4
