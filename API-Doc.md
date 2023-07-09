@@ -4,33 +4,34 @@
 
 ## Authentication
 
-| Endpoint | Method | Request Body | Response Code | Response Body |
+| API Endpoint | HTTP Method | Request Body | Response Code | Response Body |
 | --- | --- | --- | --- | --- |
 | ```POST``` Login | | | | |
-| http://beyond-the-seas.org/login/ | POST | ```{ "username": "string", "password": "string" }``` | 200 | ```{ "token": "string" }``` |
+| beyond-the-seas.org/login/ | POST | ```{ "username": "asif", "password": "codeword" }``` | 200 | ```{ "token": "string" }``` |
 | ```GET``` Logout | | | | |
-| http://beyond-the-seas.org/logout/ | GET | | 200 | |
+| beyond-the-seas.org/logout/ | GET | | 200 | |
 
 
 ## User Profile
-<!-- endpoint format: http://beyond-the-seas.org/api/user/ -->
+<!-- API endpoint format: beyond-the-seas.org/api/user/ -->
 <!-- Beutify the response body so that it looks like JSON format -->
 
-| Endpoint | Method | Request Body | Response Code | Response Body |
+| API Endpoint | HTTP Method | Request Body | Response Code | Response Body |
 | --- | --- | --- | --- | --- |
 | ```POST``` Create User | | | | |
-| http://beyond-the-seas.org/api/user/create | POST | ```{ "username": "string", "password": "string", "email": "string", "first_name": "string", "last_name": "string", "gender": "string", "age": "string"}``` | 201 | |
+| beyond-the-seas.org/api/user/create | POST | ```{ "username": "asif", "password": "codeword", "email": "asif@gmail.com", "first_name": "Asif", "last_name": "Haider", "gender": "male", "age": "23"}``` | 201 | ``` { "profile": {} } ``` |
 | ```POST``` Update User Profile | | | | |
-| http://beyond-the-seas.org/api/user/{user_id}/update-profile | POST | ``` { "user_id": "string", "bsc-varsity": "string", "bsc-year": "string", "msc-varsity": "string", "msc-year": "string", "bsc-cgpa": "string", "msc-cgpa": "string", "gre-score": [], "language-score": [], "github-link": "string", "linkedin-link": "string", "personal-site": "string", "publication-link": [] } ``` | 200 | ``` { "profile": {} } ``` |
+| beyond-the-seas.org/api/user/{user_id}/update-profile | POST | ``` { "user_id": 1, "bsc-varsity": "BUET", "bsc-year": "2024", "msc-varsity": "BUET", "msc-year": "2026", "bsc-cgpa": "3.80", "msc-cgpa": "3.90", "gre-score": ["155", "165", "4.0"], "language-score": ["23", "24", "25", "27"], "github-link": "github.com/asifhaider", "linkedin-link": "linkedin.com/asifhaider", "personal-site": "asifhaider.github.io", "publication-link": ["link1", "link2"] } ``` | 200 | ``` { "profile": {} } ``` |
 | ```GET``` User Profile | | | | |
-| http://beyond-the-seas.org/api/user/{user_id}/profile | GET | ```{ "user_id": "string" }``` | 200 | ```{ "profile": {} }``` |
+| beyond-the-seas.org/api/user/{user_id}/profile | GET | ```{ "user_id": 1 }``` | 200 | ```{ "profile": {} }``` |
 
 ## Professor
-<!-- endpoint format: http://beyond-the-seas.org/api/professor/ -->
+<!-- API endpoint format: beyond-the-seas.org/api/professor/ -->
 
-| Endpoint | Method | Request Body | Response Code | Response Body |
+| API Endpoint | HTTP Method | Request Body | Response Code | Response Body |
 | --- | --- | --- | --- | --- |
 | ```GET``` Search Professor | | | | |
-http://beyond-the-seas.org/api/professor/search?start=0&count=10 | GET | ```{ "keyword": "string" }``` | 200 | ```{ "professors": [{ "name": "string", "designation": "string", "department": "string", "research_area": [], "email": "string", "address": "string", "website": "string", "scholar_info": "string" }, {}] }``` |
+beyond-the-seas.org/api/professor/search?start=0&count=10 | GET | ```{ "keyword": "Big Data" }``` | 200 | ```{ "professors": [] }``` |
 | ```GET``` Professor Details | | | | |
-| http://beyond-the-seas.org/api/professor/{professor_id}/details | GET | ```{ "professor_id": "string" }``` | 200 | ```{ "professor": { "name": "string", "designation": "string", "department": "string", "research_area": [], "email": "string", "address": "string", "website": "string", "scholar_info": "string" } }``` |
+| beyond-the-seas.org/api/professor/{professor_id}/details | GET | ```{ "professor_id": 3 }``` | 200 | ```{ "professor": {"name": "Latifur Khan", "designation": "Professor", "department": "Computer Science", "university": "University of Texas at Dallas", "research-area": ["Big Data", "Data Streams", "Cyber Security"], "email": "khan@utdallas.edu", "address": "3322 ECSS, Dallas, TX, USA", "website": "https://cs.utdallas.edu/people/faculty/khan-latifur/", "scholar-info": ["14004", "65"], "funding-opportunity": [], "ongoing-projects": [], "feedback": []}``` |
+
