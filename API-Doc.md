@@ -25,7 +25,7 @@
 | ```GET``` User Profile | | | | |
 | [beyond-the-seas.org/api/user/{user_id}/profile]() | GET | ```{ "user_id": 1 }``` | 200 | ```{ "profile": {} }``` |
 | ```GET``` Provide Analytics Data to Analytics Service | | | | |
-| [beyond-the-seas.org/api/user/analytics]() | GET | ```{}``` | 200 | ```{ "analytics": {} }``` |
+| [beyond-the-seas.org/api/user/analytics]() | GET | ```{ "user_id": 1 }``` | 200 | ```{ "analytics": {} }``` |
 
 ## Professor
 <!-- API endpoint format: beyond-the-seas.org/api/professor/ -->
@@ -38,6 +38,10 @@
 | [beyond-the-seas.org/api/professor/search?start=0&count=10]() | GET | ```{ "keyword": "Texas" }``` | 200 | ```{ "professors": [] }``` |
 | ```GET``` Professor Details | | | | |
 | [beyond-the-seas.org/api/professor/{professor_id}/details]() | GET | ```{ "professor_id": 3 }``` | 200 | ```{ "professor": {"name": "Latifur Khan", "designation": "Professor", "department": "Computer Science", "university": "University of Texas at Dallas", "research-area": ["Big Data", "Data Streams", "Cyber Security"], "email": "khan@utdallas.edu", "address": "3322 ECSS, Dallas, TX, USA", "website": "https://cs.utdallas.edu/people/faculty/khan-latifur/", "scholar-info": ["14004", "65"], "funding-opportunity": [], "ongoing-projects": [], "feedback": []}``` |
+| ```GET``` Profile Match with Professor | | | | |
+| [beyond-the-seas.org/api/professor/{user_id}/{professor_id}/profile-match]() | GET | ```{ "user_id": 1, "professor_id": 3 }``` | 200 | ```{ "result": {} }``` |
+| ```POST``` Add to Shortlist | | | | |
+| [beyond-the-seas.org/api/professor/{user_id}/{professor_id}/add-to-shortlist]() | POST | ```{ "user_id": 1, "professor_id": 3 }``` | 201 | ```{ "professor_list": {} }``` |
 | ```GET``` Provide Analytics Data to Analytics Service | | | | |
 | [beyond-the-seas.org/api/professor/analytics]() | GET | ```{}``` | 200 | ```{ "analytics": {} }``` |
 
