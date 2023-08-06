@@ -23,7 +23,7 @@
 | ```POST``` Create User | | | | |
 | [beyond-the-seas.org/api/user/create]() | POST | ```{ "token": "string", "username": "asif", "password": "codeword", "email": "asif@gmail.com", "first_name": "Asif", "last_name": "Haider", "gender": "male", "age": "23"}``` | 201 | ``` { "profile": {} } ``` |
 | ```POST``` Update User Profile | | | | |
-| [beyond-the-seas.org/api/user/{user_id}/update-profile]() | POST | ``` { "user_id": 1, "bsc-varsity": "BUET", "bsc-year": "2024", "msc-varsity": "BUET", "msc-year": "2026", "bsc-cgpa": "3.80", "msc-cgpa": "3.90", "gre-score": ["155", "165", "4.0"], "language-score": ["23", "24", "25", "27"], "github-link": "github.com/asifhaider", "linkedin-link": "linkedin.com/asifhaider", "personal-site": "asifhaider.github.io", "publication-link": ["link1", "link2"] } ``` | 200 | ``` { "profile": {} } ``` |
+| [beyond-the-seas.org/api/user/{user_id}/update]() | POST | ``` { "user_id": 1, "bsc-varsity": "BUET", "bsc-year": "2024", "msc-varsity": "BUET", "msc-year": "2026", "bsc-cgpa": "3.80", "msc-cgpa": "3.90", "gre-score": ["155", "165", "4.0"], "language-score": ["23", "24", "25", "27"], "github-link": "github.com/asifhaider", "linkedin-link": "linkedin.com/asifhaider", "personal-site": "asifhaider.github.io", "publication-link": ["link1", "link2"] } ``` | 200 | ``` { "profile": {} } ``` |
 | ```GET``` User Profile | | | | |
 | [beyond-the-seas.org/api/user/{user_id}/profile]() | GET | ```{ "user_id": 1 }``` | 200 | ```{ "profile": {} }``` |
 | ```GET``` Provide Analytics Data to Analytics Service | | | | |
